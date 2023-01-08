@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<meta charset='UTF-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>Document</title>
+	<style>
+		* {
+			margin  : 0;
+			padding : 0;
+		}
+
+		section {
+			width  : 60vw;
+			margin : 10vh auto 0;
+		}
+
+		#search {
+			width            : 60vw;
+			height           : 30px;
+			outline          : none;
+			background-color : transparent;
+			border           : none;
+			border-bottom    : 2px solid aquamarine;
+		}
+
+		#search:focus {
+			outline : none;
+			border  : none;
+			border-bottom    : 2px solid sandybrown;
+		}
+
+		#search::-webkit-input-placeholder {
+			color : #777;
+		}
+
+		ul {
+			margin : 10vh auto 0;
+			width  : 60vw;
+			height : 60vh;
+		}
+
+		li {
+			list-style-type : lower-greek;
+		}
+
+	</style>
+
+	<script src='https://unpkg.com/react@18/umd/react.development.js' crossorigin></script>
+	<script src='https://unpkg.com/react-dom@18/umd/react-dom.development.js' crossorigin></script>
+	<script src='https://unpkg.com/babel-standalone@6/babel.min.js'></script>
+</head>
+
+<body>
+<article id='root'></article>
+</body>
+
+<script type='text/babel' src='./components/search.js'></script>
+<script type='text/babel' src='./components/list.js'></script>
+<script type='text/babel' src='./app.js'></script>
+</html>
